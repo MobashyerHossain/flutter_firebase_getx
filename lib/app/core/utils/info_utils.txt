@@ -1,0 +1,10 @@
+#Here you can insert utilities for your application, such as masks, form keys or widgets
+
+- keys.dart  
+    # inside ex: static final GlobalKey formKey = GlobalKey<FormState>();
+
+- masks.dart  
+    # inside ex: static final maskCPF = MaskTextInputFormatter(mask: "###.###.###-##", filter: {"#": RegExp(r'[0-9]')});  
+
+- helpers.dart  
+    # Use classes to make your variables easier to use, eg Keys.myKey, Masks.maskCPF

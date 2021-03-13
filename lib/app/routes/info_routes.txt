@@ -1,0 +1,13 @@
+# In this repository we will deposit our routes and pages.  
+# We chose to separate into two files, and two classes, one being routes.dart, containing its constant routes and the other for routing.
+
+- my_routes.dart
+    # class Routes {
+    # This file will contain your constants ex:  
+    # class Routes { const HOME = '/ home'; }
+
+- my_pages.dart
+    # This file will contain your array routing ex :  
+    # class AppPages { static final pages = [  
+    #  GetPage(name: Routes.HOME, page:()=> HomePage()) 
+    # ]}; 

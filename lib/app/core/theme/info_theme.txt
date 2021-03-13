@@ -1,0 +1,10 @@
+#Here we can create themes for our widgets, texts and colors
+
+- text_theme.dart  
+    # inside ex: final textTitle = TextStyle(fontSize: 30)
+    
+- color_theme.dart  
+    # inside ex: final colorCard = Color(0xffEDEDEE)
+
+- app_theme.dart  
+    # inside ex: final textTheme = TextTheme(headline1: TextStyle(color: colorCard))  
