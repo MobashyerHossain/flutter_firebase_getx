@@ -1,3 +1,5 @@
+import 'package:abc/app/routes/app_pages.dart';
+import 'package:abc/app/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -10,26 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Scaffold(
-        body: Center(
-          child: Text('Wecome to GetX'),
-        ),
+      title: 'Get Routes',
+      getPages: AppPages.pages,
+      initialRoute: AppRoutes.INITIAL,
+      defaultTransition: Transition.rightToLeft,
+      theme: ThemeData(
+        primarySwatch: Colors.indigo,
       ),
     );
   }
