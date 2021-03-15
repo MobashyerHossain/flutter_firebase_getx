@@ -1,4 +1,4 @@
-name: abc
+name: firebase_getx
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -25,7 +25,9 @@ dependencies:
     sdk: flutter
   get: ^3.26.0
   meta: ^1.1.8
-  http: ^0.12.1
+  # http: ^0.12.1
+  firebase_core: "0.7.0"
+  page_transition: "^1.1.6"
 
 
   # The following adds the Cupertino Icons font to your application.

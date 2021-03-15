@@ -1,5 +1,6 @@
-import 'package:abc/app/routes/app_pages.dart';
-import 'package:abc/app/routes/app_routes.dart';
+import 'package:firebase_getx/app/core/theme/my_app_theme.dart';
+import 'package:firebase_getx/app/routes/app_pages.dart';
+import 'package:firebase_getx/app/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -17,9 +18,8 @@ class MyApp extends StatelessWidget {
       getPages: AppPages.pages,
       initialRoute: AppRoutes.INITIAL,
       defaultTransition: Transition.rightToLeft,
-      theme: ThemeData(
-        primarySwatch: Colors.indigo,
-      ),
+      theme: MyAppTheme().lightTheme,
+      darkTheme: MyAppTheme().darkTheme,
     );
   }
 }
